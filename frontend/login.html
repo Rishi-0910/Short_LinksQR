@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(){try{var t=localStorage.getItem("linknest-theme");if(t!=="dark"&&t!=="light"){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>Log in — LinkNest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <div class="auth-shell">
+    <div class="auth-card">
+      <p class="brand">Link<span class="brand-mark">Nest</span></p>
+      <p class="subtitle">Log in to manage your links and bio page.</p>
+
+      <div id="auth-banner" class="banner"></div>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Your password" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      </form>
+
+      <p class="auth-links">
+        <a href="/forgot-password.html">Forgot password?</a> · New here? <a href="/signup.html">Sign up</a>
+      </p>
+    </div>
+  </div>
+  <script type="module" src="/js/auth.js"></script>
+</body>
+</html>

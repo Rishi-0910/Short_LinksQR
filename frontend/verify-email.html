@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>(function(){try{var t=localStorage.getItem("linknest-theme");if(t!=="dark"&&t!=="light"){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+<title>Verify email — LinkNest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <div class="auth-shell">
+    <div class="auth-card">
+      <p class="brand">Link<span class="brand-mark">Nest</span></p>
+      <p class="subtitle">Confirming your email address…</p>
+      <div id="verify-status" class="banner show banner-success">Checking token…</div>
+      <p class="auth-links"><a href="/login.html">Go to log in</a></p>
+    </div>
+  </div>
+  <script type="module" src="/js/auth.js"></script>
+</body>
+</html>

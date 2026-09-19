@@ -1,0 +1,5 @@
+[2026-09-18T05:17:50.891729Z] TO: audit@example.com | SUBJECT: Verify your email | Welcome! Confirm your address to activate your account: http://localhost:5000/verify-email.html?token=RtYvvsAG3qIorykazb8Gmi0Z-7TZKhd0BPkriNujRZs
+[2026-09-18T05:18:14.474029Z] TO: replay@example.com | SUBJECT: Verify your email | Welcome! Confirm your address to activate your account: http://localhost:5000/verify-email.html?token=BE0EzBpf_FROOEmJvX4YROk49KKu3ydMcoljJEt94mU
+[2026-09-18T05:23:55.198657Z] TO: rishi@gmail.com | SUBJECT: Verify your email | Welcome! Confirm your address to activate your account: http://localhost:5000/verify-email.html?token=1iHDPINla0P_BtMeuAEIg9O7RON66tQZKTobOpV-HPE
+[2026-09-18T05:24:51.946017Z] TO: rishicsepu@gmail.com | SUBJECT: Verify your email | Welcome! Confirm your address to activate your account: http://localhost:5000/verify-email.html?token=x7CCjnDA7MPLyFLRrzUAtwbEjpspkYxmNoUbAq9F44I
+[2026-09-19T05:12:41.531116Z] TO: rishicsepu@gmail.com | SUBJECT: Verify your email | Welcome! Confirm your address to activate your account: http://localhost:5000/verify-email.html?token=jzxdwZCIU1_91F5xLWUgGDxZ_vV9dfB0YaA5swUoew0

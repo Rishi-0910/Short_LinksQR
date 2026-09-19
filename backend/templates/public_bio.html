@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ display_name }} — Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/public-bio.css" />
+</head>
+<body class="theme-{{ theme }}">
+  <main class="bio-card">
+    <div class="bio-avatar" aria-hidden="{{ 'false' if avatar_url else 'true' }}">
+      {% if avatar_url %}
+        <img src="{{ avatar_url }}" alt="{{ display_name }}'s avatar" />
+      {% else %}
+        <span>{{ display_name[0]|upper if display_name else '?' }}</span>
+      {% endif %}
+    </div>
+    <h1 class="bio-name">{{ display_name }}</h1>
+    <p class="bio-handle">@{{ username }}</p>
+    {% if bio %}<p class="bio-text">{{ bio }}</p>{% endif %}
+
+    <nav class="bio-links" aria-label="Social links">
+      {% for link in social_links %}
+        <a class="bio-link-btn" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+          <span class="bio-link-label">{{ link.label }}</span>
+          <span class="bio-link-arrow" aria-hidden="true">↗</span>
+        </a>
+      {% else %}
+        <p class="bio-empty">No links added yet.</p>
+      {% endfor %}
+    </nav>
+
+    <footer class="bio-footer">Made with LinkNest</footer>
+  </main>
+</body>
+</html>
